@@ -1,6 +1,7 @@
 axios
     .get('https://rickandmortyapi.com/api/character')
     .then(response => {
+      let count = response.data.info.count;
       let data = response.data.results;
       let blockAvatar = document.querySelector('.img');
       let blockData = document.querySelector('.data');
@@ -11,7 +12,7 @@ axios
       let blockResult = document.querySelector('.result')
       //------------------------------------------------//
       let result = document.createElement("li");
-      result.innerHTML = data.length;
+      result.innerHTML = count;
       blockResult.appendChild(result);
       //------------------------------------------------//
       data.forEach((item) => {

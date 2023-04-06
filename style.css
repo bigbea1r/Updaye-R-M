@@ -18,19 +18,57 @@ ol,
 li {
     list-style: none;
 }
-.block{
+.wrapper{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; 
     background: url("https://wenizay.com/_pu/25/80013100.jpg") 0 0 no-repeat;
     background-position: center;
     background-size: 100%;
-    overflow: hidden;
-    position:static;
-    font-family: "Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper__up{
+    width: 98.5%;
+    height: 8%;
+    color: white;
+    display:flex;
+    flex-direction: row-reverse;
+}
+.result {
+    display: flex;
+    justify-content: center;
+}
+.result li{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35rem;
+    color: rgb(212, 249, 0);
+    background-color:rgba(0, 0, 0, 0.225);
+    border-radius:35%;
+    /*margin-top: 1rem;*/
+    padding: 1rem;
+}
+.wrapper__down{
+    height: 92%;
+    display:flex;
+}
+.result{
+    display: flex;
+    flex-direction:column;  
+    width:5%;
+    
+    /*flex: 1 1 3.25%;*/
+}
+.block{
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
     color:rgb(0, 255, 0);
+    width: 100%;
     height: 100%;
-
 }
 .block li{
     background-color:rgba(0, 0, 0, 0.225);
@@ -55,7 +93,6 @@ img{
     display: flex;
     flex-direction:column;
     width: 35%;
-    color: rgb(212, 249, 0);
     /*flex: 1 1 22.75%;*/
 }
 .users li{
@@ -67,6 +104,7 @@ img{
     display: flex;
     flex-direction:column;
     width: 15%;
+    color: rgb(212, 249, 0);
     /*flex: 1 1 9.75%;*/
 }
 .mb_dead li{
@@ -78,7 +116,6 @@ img{
     display: flex;
     flex-direction:column;
     width: 15%;
-    color: rgb(212, 249, 0);
     /*flex: 1 1 9.75%;*/
 }
 .mb_beast li{
@@ -89,7 +126,8 @@ img{
 .value{
     display: flex;
     flex-direction:column;  
-    width: 10%;
+    width: 12.5%;
+    color: rgb(212, 249, 0);
     /*flex: 1 1 6.5%;*/
 }
 .value li{
@@ -100,7 +138,7 @@ img{
 .data{
     display: flex;
     flex-direction:column;
-    width:17.55%;
+    width:20%;
     font-size: 0.7rem;
     /*flex: 11.4075%;*/
 }
@@ -109,16 +147,4 @@ img{
     justify-content: center;
     align-items: center;
 }
-.result{
-    display: flex;
-    flex-direction:column;  
-    width:5%;
-    font-size: 2rem;
-    /*flex: 1 1 3.25%;*/
-}
-.result li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1.2rem;
-}
+
